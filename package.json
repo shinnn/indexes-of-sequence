@@ -2,7 +2,7 @@
   "name": "indexes-of-sequence",
   "version": "1.0.0",
   "description": "Find all indexes at which a given sequence of elements can be found in the array",
-  "repository": "shinnn/index-of-sequence",
+  "repository": "shinnn/indexes-of-sequence",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
     "prebuild": "eslint --fix --format=codeframe module.js test.js",
