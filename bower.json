@@ -1,0 +1,36 @@
+{
+  "name": "indexes-of-sequence",
+  "description": "Find all indexes at which a given sequence of elements can be found in the array",
+  "keywords": [
+    "array",
+    "all",
+    "index",
+    "search",
+    "find",
+    "sequence",
+    "series",
+    "elements"
+  ],
+  "main": "module.js",
+  "moduleType": "es6",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/indexes-of-sequence.git"
+  },
+  "authors": [
+    "Shinnosuke Watanabe (https://github.com/shinnn)"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "append-type": "^1.0.0",
+    "arr-indexes-of": "^1.0.1"
+  },
+  "ignore": [
+    "**/.*",
+    "*.js",
+    "*.json",
+    "*.yml",
+    "coverage",
+    "node_modules"
+  ]
+}
