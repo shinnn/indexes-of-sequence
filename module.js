@@ -12,10 +12,18 @@ export default function indexesOfSequence(arr, searchValues, fromIndex) {
     }
   });
 
+  if (searchValues.length === 0) {
+    return [];
+  }
+
   var firstValueIndexes = arrIndexesOf(arr, searchValues[0], fromIndex);
 
-  if (firstValueIndexes.length === 0 || searchValues.length === 0) {
+  if (firstValueIndexes.length === 0) {
     return [];
+  }
+
+  if (searchValues.length === 1) {
+    return firstValueIndexes;
   }
 
   var restSearchValues = searchValues.splice(1);
