@@ -10,10 +10,25 @@ test('indexOfSequence()', t => {
     'should return all indexes of the search sequence.'
   );
 
+  const arr = [1, 3, '1', '3', 1, 1, 3];
+  const searches = [1, 3];
+
   t.deepEqual(
-    indexOfSequence([1, 3, '1', '3', 1, 1, 3], [1, 3], 1),
+    indexOfSequence(arr, searches, 1),
     [5],
     'should support the third `fromIndex` parameter.'
+  );
+
+  t.deepEqual(
+    arr,
+    [1, 3, '1', '3', 1, 1, 3],
+    'should not mutate the array passed to the first parameter.'
+  );
+
+  t.deepEqual(
+    searches,
+    [1, 3],
+    'should not mutate the array passed to the second parameter.'
   );
 
   t.deepEqual(

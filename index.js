@@ -28,7 +28,7 @@ function indexesOfSequence(arr, searchValues, fromIndex) {
     return firstValueIndexes;
   }
 
-  var restSearchValues = searchValues.splice(1);
+  var restSearchValues = searchValues.slice(1);
 
   return firstValueIndexes.filter(function(index) {
     return restSearchValues.every(function(val, i) {
