@@ -31,14 +31,18 @@
     "arr-indexes-of": "^1.0.1"
   },
   "devDependencies": {
-    "@shinnn/eslint-config": "^3.3.5",
-    "eslint": "^3.12.1",
+    "@shinnn/eslint-config": "^4.0.3",
+    "eslint": "^4.2.0",
     "istanbul": "^0.4.5",
-    "rollup": "^0.37.0",
+    "rollup": "^0.45.2",
     "rollup-config-module": "^1.0.0",
-    "tape": "^4.6.2"
+    "tape": "^4.7.0"
   },
   "eslintConfig": {
-    "extends": "@shinnn"
+    "extends": "@shinnn",
+    "rules": {
+      "no-var": "off",
+      "prefer-arrow-callback": "off"
+    }
   }
 }
